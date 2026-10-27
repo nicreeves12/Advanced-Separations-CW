@@ -1,0 +1,24 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import solve_ivp
+
+initial_conc = 0 # mol/m^3
+
+velocity = 2 # m/s
+feed_conc_rate = 2 # mol/m^3/s
+steady_state_time = 5 # s
+
+# grid
+grid_spacing = 0.1 # delta_z
+length = 30 # m
+
+length_array = np.arange(grid_spacing, length + grid_spacing, grid_spacing)
+initial_conditions = np.zeros(shape = length_array.shape)
+
+def ode_system(t, conc):
+
+    d_conc_dt = 
+
+    return dcdt
+    
+    
